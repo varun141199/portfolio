@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script></script>
+  </head>
+  <body style="background-color: rgb(233, 233, 233)">
+    <ul class="menu">
+      <button onclick="history.back()" class="button1">Back to Home</button>
+      <li style="float: right"><a href="#">About Me</a></li>
+      <li style="float: right"><a href="#">Contact</a></li>
+    </ul>
+
+    <section>
+      <div class="heading">
+        Projects I Have Worked On
+      </div>
+    </section>
+
+    <section>
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openCity(event, 'Flutter Projects')"
+          id="defaultOpen"
+        >
+          FLUTTER PROJECTS
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'UX PROJECTS')">
+          UI/UX PROJECTS
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'DS / ML PROJECTS')">
+          DS / ML PROJECTS
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="Flutter Projects" class="tabcontent">
+        <a href="mobinews.html" style="text-decoration: none;"><div class="box">
+          <div class="projects">
+            <img
+              src="portfolio images\mobinews cover.png"
+              height="250"
+              width="300"
+              alt="mobinews"
+            />
+            <h3>MobiNews</h3>
+          </div></a>
+          <a href="penit.html" style="text-decoration: none;"><div class="projects">
+            <img
+              src="portfolio images\pen it.png"
+              height="250"
+              width="300"
+              alt="pen it"
+            />
+            <h3>PenIt</h3>
+          </div></a>
+          <a href="screendeck.html" style="text-decoration: none;"><div class="projects">
+            <img
+              src="portfolio images\screen deck.png"
+              height="250"
+              width="300"
+              alt="screen deck"
+            />
+            <h3>Screen Deck</h3>
+          </div></a>
+        </div>
+      </div>
+
+      <div id="UX PROJECTS" class="tabcontent">
+        <a href="healtheat.html" style="text-decoration: none;">
+          <div class="box1">
+            <img
+              src="portfolio images\health eat cover.png"
+              height="250"
+              width="750"
+              alt="healtheat"
+              style="float: left"
+            />
+            <div class="box2">
+              <img
+              src="portfolio images/Custom Size – 1.png"
+              height="250"
+              width="300"
+              alt="healtheat-abt"
+              style="float: right"
+            />
+            </div>
+          </div></a>
+          <a href="mailme.html" style="text-decoration: none;"><div class="box1">
+            <img
+            src="portfolio images\mail me cover.png"
+            height="250"
+            width="750"
+            alt="mail me"
+          />
+          <div class="box2">
+            <img
+            src="portfolio images/Custom Size – 2.png"
+            height="250"
+            width="300"
+            alt="healtheat-abt"
+            style="float: right"
+          />
+          </div>
+          </div></a>
+          <a href="booker.html" style="text-decoration: none;"><div class="box1">
+            <img
+            src="portfolio images/booker cover.png"
+            height="250"
+            width="750"
+            alt="booker"
+          />
+          <div class="box2">
+            <img
+            src="portfolio images/Custom Size – 3.png"
+            height="250"
+            width="300"
+            alt="healtheat-abt"
+            style="float: right"
+          />
+          </div>
+          </div></a>
+          <a href="homely.html" style="text-decoration: none;"><div class="box1">
+            <img
+            src="portfolio images/homely-home.png"
+            height="250"
+            width="750"
+            alt="homely"
+          />
+          <div class="box2">
+            <img
+            src="portfolio images/Custom Size – 4.png"
+            height="250"
+            width="300"
+            alt="healtheat-abt"
+            style="float: right"
+          />
+          </div>
+          </div></a>
+       
+      </div>
+
+      <div id="DS / ML PROJECTS" class="tabcontent">
+        <a href="facedetection.html" style="text-decoration: none;"><div class="box">
+          <div class="projects">
+            <img
+              src="portfolio images\face detection.png"
+              height="250"
+              width="300"
+              alt="face detection"
+            />
+            <h3>Face Detection</h3>
+          </div></a>
+          <a href="hatespeech.html" style="text-decoration: none;"><div class="projects">
+            <img
+              src="portfolio images\hatespeech.jpg"
+              height="250"
+              width="300"
+              alt="hate speech detection"
+            />
+            <h3>Hate Speech Detection</h3>
+          </div></a>
+          <a href="brainmri.html" style="text-decoration: none;"><div class="projects">
+            <img
+              src="portfolio images/brainmri.jpg"
+              height="250"
+              width="300"
+              alt="hate speech detection"
+            />
+            <h3>Brain MRI Classification</h3>
+          </div></a>
+        </div>
+      </div>
+
+      <script>
+        function openCity(evt, cityName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+      </script>
+    </section>
+  </body>
+</html>

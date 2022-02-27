@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*NAVBAR*/
+
+.navbar {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 20px;
+}
+.navbar ul li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.main {
+  display: block;
+  margin: auto;
+  padding: 140px 10px 140px 10px;
+}
+
+/*VARUN BOUNCING TITLE*/
+
+.greet {
+  padding-top: 175px;
+  padding-left: 275px;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.bouncing-text {
+  position: relative;
+  display: flex;
+  font-size: 170px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding-left: 275px;
+  padding-bottom: 200px;
+  padding-right: 200px;
+  letter-spacing: 50px;
+}
+
+.v,
+.a,
+.r,
+.u,
+.n {
+  color: #000000;
+  text-shadow: 0 5px #0000002d;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.v {
+  animation: bounce 1s ease;
+}
+
+.a {
+  animation: bounce 1s ease 0.1s;
+}
+
+.r {
+  animation: bounce 1s ease 0.2s;
+}
+
+.u {
+  animation: bounce 1s ease 0.3s;
+}
+
+.n {
+  animation: bounce 1s ease 0.4s;
+}
+
+/* SCROLL DOWN ARROW */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 100px;
+}
+
+.arrows path {
+  stroke: black;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+/*SKILLS*/
+
+.skills h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 75px;
+}
+
+.button {
+  border: solid black;
+  background-color: white;
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+}
+
+/*WHAT I CAN DO*/
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.images h3 {
+  padding-left: 5px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.images img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+/* WHAT I HAVE DONE */
+
+.projects img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+.projects h3 {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.work h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.work h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 140px;
+}
+
+/* CERTIFICATIONS */
+
+.certifications h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 140px;
+}
+
+.certs {
+  padding-bottom: 100px;
+}
+.certs img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+/* ////////////////////////////////////////////////ROJECTS PAGE//////////////////////////////////////////////////////////////////// */
+
+/* NAVBAR */
+.menu {
+  list-style: none;
+  list-style: none;
+  margin: 20px 20px;
+}
+.menu li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.menu li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.button1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+}
+
+/* PAGE HEADING */
+
+.heading {
+  font-weight: bold;
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 75px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* TABS */
+.tab {
+  overflow: hidden;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(233, 233, 233);
+  border-bottom: 2px solid black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  justify-content: space-evenly;
+  display: none;
+  padding: 25px 50px;
+  border-top: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.tabcontent {
+  animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* UI/UX PROJECT BOXES */
+
+.box1 {
+  width: 1050px;
+  height: 250;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+.box1 img {
+  vertical-align: bottom;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.box2 img {
+  vertical-align: bottom;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
