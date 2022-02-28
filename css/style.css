@@ -319,8 +319,8 @@ html {
   font-weight: bold;
   font-size: 75px;
   font-family: "Courier New", Courier, monospace;
-  padding-left: 75px;
-  padding-top: 100px;
+  text-align: center;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -429,4 +429,44 @@ html {
   padding-top: 10px;
   padding-left: 325px;
   padding-bottom: 50px;
+}
+
+.me {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.me img {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.455),
+    0 6px 20px 0 rgba(0, 0, 0, 0.455);
+}
+
+/* //////////////////////////////////// MOBINEWS //////////////////////////////////*/
+
+.heading-projects {
+  font-weight: bold;
+  font-size: 75px;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 75px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.cover img {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
